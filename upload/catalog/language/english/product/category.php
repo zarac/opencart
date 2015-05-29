@@ -21,4 +21,6 @@ $_['text_rating_asc']   = 'Rating (Lowest)';
 $_['text_rating_desc']  = 'Rating (Highest)';
 $_['text_model_asc']    = 'Model (A - Z)';
 $_['text_model_desc']   = 'Model (Z - A)';
+$_['text_manufacturer_asc']  = 'Manufacturer (A - Z)';
+$_['text_manufacturer_desc'] = 'Manufacturer (Z - A)';
 $_['text_limit']        = 'Show:';

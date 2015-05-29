@@ -293,6 +293,18 @@ class ControllerProductCategory extends Controller {
 				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=DESC' . $url)
 			);
 
+			$data['sorts'][] = array(
+				'text'  => $this->language->get('text_manufacturer_asc'),
+				'value' => 'manufacturer-ASC',
+				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=manufacturer&order=ASC' . $url)
+			);
+
+			$data['sorts'][] = array(
+				'text'  => $this->language->get('text_manufacturer_desc'),
+				'value' => 'manufacturer-DESC',
+				'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=manufacturer&order=DESC' . $url)
+			);
+
 			$url = '';
 
 			if (isset($this->request->get['filter'])) {
